@@ -1,0 +1,86 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, font, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+
+
+.background {
+    opacity:0.9;
+}
+
+
+
+.transbox h1 {
+    color: white;
+    font-size: 33px;
+    text-shadow: 5px 5px 5px #A00000;
+    text-transform: uppercase;
+    text-indent: 12%;
+}
+
+
+
+
+/* Google Maps */
+#googleMap{
+    color: black;
+    width:500px;
+    height:500px;
+    position:relative;
+    border: dashed white 2px;
+    left: 19%;
+    top: 22px;
+}
+
+
+
+
+/* page body */
+body {
+    font-size: 12px ;
+    font-family: Palatino Linotype, serif;
+    color: white;
+    margin: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: url(https://lh6.googleusercontent.com/-JhZunCaiP4c/TY0Gx6D56cI/AAAAAAAABtg/c4tkHAmLOqs/s1600/IMG_4335.jpg);
+    background-color: #FFFFFF;
+    background-attachment: fixed;
+    padding: 50px;
+    border-width: 2px;
+}
+
+#text {
+    text-indent: 25%;
+    text-shadow: 1px 1px 1px #A00000;
+}
+
+#linkquest {
+    text-indent: 25%;
+}
+
+
+
+
+/* links */
+a:link {
+    color: #339966;
+    font-weight: bold;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+a:visited { color: #FF9999 }
+
+a:hover { background-color: #FFFFFF }
+
+a:active { background-color: #FFFFFF }
+
+a:focus { background-color: #FFFFFF }

@@ -1,0 +1,306 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, font, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	font-family: Georgia, Verdana, “Lucida Sans Unicode”, sans-serif;
+	font-size: 12px;
+	color: #999;
+	background-color: #FFB0BA;
+	line-height: 1;
+}
+
+
+h2 {
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+#container {
+	margin: 50px auto 0px auto; /* centered */
+	width: 600px;
+}
+
+
+
+
+/* Menu tabs */
+.menu {
+	position: relative;
+	top: 3px;
+	left: 50px;
+	z-index: 80; /* the stack order: displayed under bubble (90) */
+}
+
+.menu ul li {
+	-webkit-transform: rotate(-45deg); /* rotate the list item */
+	-moz-transform: rotate(-45deg); /* rotate the list item */
+	width: 50px;
+	overflow: hidden;	
+	margin: 10px 0px;
+	padding: 5px 5px 5px 15px;
+	float: left;
+	background: #7f9db9;
+	text-align: right;
+}	
+
+.menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	display:block;
+}
+
+.menu ul li.l1 {
+	background: rgba(131,178,51,0.65);
+}
+
+.menu ul li.l1:hover {
+	background: rgb(131,178,51);
+}
+
+.menu ul li.l2 {
+	background: rgba(196,89,30,0.65);
+}
+
+.menu ul li.l2:hover {
+	background: rgb(196,89,30);
+}
+
+.menu ul li.l3 {
+	background: rgba(65,117,160,0.65);
+}
+
+.menu ul li.l3:hover {
+	background: rgb(65,117,160);
+}
+
+.menu ul li.l4 {
+	background: rgba(153, 0, 51,0.65);
+}
+
+.menu ul li.l4:hover {
+	background: rgb(153, 0, 51);
+}
+
+.menu ul li.lphp {
+	background: rgba(51, 102, 102,0.65);
+}
+
+.menu ul li.lphp:hover {
+	background: rgb(51, 102, 102);
+}
+
+.menu ul li.l5 {
+	background: rgba(255, 102, 153,0.65);
+}
+
+.menu ul li.l5:hover {
+	background: rgb(255, 102, 153);
+}
+.menu ul li.l6 {
+	background: rgba(204, 0, 102,0.65);
+}
+
+.menu ul li.l6:hover {
+	background: rgb(204, 0, 102);
+}
+
+.menu span {
+	margin: 15px 80px 0px 0px;
+	float:right;
+	opacity: 0.2;
+	color: black;
+	weight: bold;
+	font-family: times new roman;
+}
+
+
+
+
+/* Ribbon */
+.rectangle {
+	background: #7f9db9;
+	height: 50px;
+	width: 630px;
+	position: relative;
+	left:-15px;
+	top: 30px;
+	float: left;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+        -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+        -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	z-index: 100; /* the stack order: foreground */
+}
+
+.rectangle h2 {
+	font-size: 30px;
+	color: #fff;
+	padding-top: 6px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.triangle-l {
+	border-color: transparent #7d90a3 transparent transparent;
+	border-style:solid;
+	border-width:15px;
+	height:0px;
+	width:0px;
+	position: relative;
+	left: -30px;
+	top: 65px;
+	z-index: -1; /* displayed under bubble */
+}
+
+.triangle-r {
+	border-color: transparent transparent transparent #7d90a3;
+	border-style:solid;
+	border-width:15px;
+	height:0px;
+	width:0px;
+	position: relative;
+	left: 600px;
+	top: 35px;
+	z-index: -1; /* displayed under bubble */
+}
+
+
+
+
+/* Content box */
+.bubble {
+	clear: both;
+	margin: auto;
+	width: 600px;
+	height: 500px;
+	background: #fff;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	-khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);	
+	position: relative;
+	top: 0;
+	z-index: 90; /* the stack order: displayed under ribbon rectangle (100) */
+}
+
+
+
+
+/* Content */
+#content {
+	padding: 2em;
+	line-height: 2;
+}
+
+.info {
+	padding: 60px 30px 35px 25px;
+	width: 100%;
+	height: 380px;
+	padding: 0px 20px 0px 30px;
+	border: 1px solid #fff;
+	margin: auto;
+	overflow: auto;
+	box-sizing: border-box;
+	position: relative;
+	top: 7%;
+}
+
+.info h2 {
+	font-size: 20px;
+}
+
+.info p {
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.info p a {
+	color: #c4591e;
+	text-decoration: none;
+}
+
+.info a:link { color: #FF9999; }
+
+.info a:visited { color: white; }
+
+.info a:hover {
+	background-color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.info a:active { background-color: #FFFFFF }
+
+.info a:focus { background-color: #FFFFFF }
+
+mark {
+	background-color: #ffdeeb;
+}
+
+dd {
+	color: #300000;
+}
+
+ol {
+	list-style: circle;
+	list-style-position: outside;
+	font-size: 14px;
+	color: #006633;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+#return {
+	color: black;
+	font-size: 10.5px;
+}
+
+
+/* tables */
+table, th, td {
+	border-collapse: collapse;
+	border: 1px dotted black;
+	font-size: 12px;
+	color: #000033
+}
+
+th, td {
+	padding: 10px
+}
+
+caption {
+	caption-side: top
+}
+
+
+/* Lab #5 */
+#surveyform {
+	color: black;
+	border: dotted 2px;
+	padding: 15px;
+	height: 310px;
+	width: 310px;
+	font-family: arial;
+	background-color: #F8F8F8;
+}

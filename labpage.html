@@ -1,0 +1,473 @@
+<!DOCTYPE HTML SYSTEM>
+
+<html>
+    <head>
+        <title>Web Technology ~ A014</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="http://www.few.vu.nl/~tnn720/WebTechnology/labpage.css">
+        <link rel="icon" href="http://cdn.bitbucket.org/rmaclean/atomicmvvm/downloads/icon.png">
+        <!-- Colorpicker -->
+        <script type="text/javascript" src="http://www.few.vu.nl/~tnn720/WebTechnology/jscolor/jscolor.js"></script>
+        <input class="color" value="FFB0BA" onchange="document.body.style.backgroundColor = '#'+this.color">
+        <!-- Sorttable tables -->
+        <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="menu">
+                <ul id="tabs">
+                    <li class="l1"><a href="#" name="tab1">Lab #1</a></li>
+                    <li class="l2"><a href="#" name="tab2">Lab #2</a></li>
+                    <li class="l3"><a href="#" name="tab3">Lab #3</a></li>
+                    <li class="l4"><a href="#" name="tab4">Lab #4</a></li>
+                    <li class="lphp"><a href="#" name="tabphp">PHP</a></li>
+                    <li class="l5"><a href="#" name="tab5">Lab #5</a></li>
+                    <li class="l6"><a href="#" name="tab6">Lab #6</a></li>
+                </ul>
+                <span>A014</span>
+            </div>
+        
+        <div class="bubble">
+            <div class="rectangle"><h2>Questions</h2></div>
+            <div class="triangle-l"></div>
+            <div class="triangle-r"></div>
+            <div class="info">
+            <div id="content">
+                <div id="tab1">
+                    <h2>Lab #1</h2><br>
+                    <dl>
+                        <dt id="q1.1">Question 1 - Create a document with the text "Hello World!" in a word processor such as Microsoft Word or LibreOffice Writer. Save the file as a Web page or HTML document
+                        and inspect the HTML source (you can do this within the word processor, but it may be easier to do it using a plain text editor). Describe briefly your findings.</dt>
+                        <dd><mark>When you save the word-document with "Hello World!" as a html-document and open it with a texteditor, you get a long list with codes.
+                        The codes contains information about the style (fonts, marge), also about the user and a lot of other codes.</mark><br><br></dd>
+                        <dt id="q1.2">Question 2 - Explain the difference between "the Internet" and "the World-Wide Web". Provide links to the online resources you used (if any) to answer this question.</dt>
+                        <dd><mark>Internet actually stands for "inter-networking" and is a network of networks. It is not the same as World-Wide Web. WWW is built on top of Internet.
+                        <a href="https://bb.vu.nl/bbcswebdav/pid-1913607-dt-content-rid-4406277_2/courses/FEW_X_400488_2013_130/1-architecture.pdf">(source)</a></mark><br><br></dd>
+                        <dt id="q1.3">Question 3 - Find out which port (according to the current IANA assignment) is used for the following protocols (HTTP, SSH, FTP) and provide a one line description
+                        of all three protocols, indicate with a link which authoritative source you have used for each description.</dt>
+                        <br><dd>
+                            <table class="sortable">
+                                <caption>Protocol</caption>
+                                <tr>
+                                    <th>Protocol</th><th>Port</th>
+                                </tr>
+                                <tr>
+                                    <td>HTTP</td><td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>SSH</td><td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>FTP</td><td>21</td>
+                                </tr>
+                            </table>
+                        </dd>
+                        <dd>
+                            <dl>
+                                <dt><mark>HTTP (HyperText Transfer Protocol)</mark></dt>
+                                <dd><mark>This is a protocol which makes it possible for a user agent, such as a browser, to request Web data from a server.
+                                <a href="https://bb.vu.nl/bbcswebdav/pid-1913607-dt-content-rid-4406277_2/courses/FEW_X_400488_2013_130/1-architecture.pdf">(source)</a></mark></dd>
+                            </dl>
+        
+                            <dl>
+                                <dt><mark>SSH (Secure Shell)</mark></dt>
+                                <dd><mark><q>Secure Shell (SSH), sometimes known as Secure Socket Shell, is a UNIX-based command interface and protocol for securely getting access to a remote computer.</q>
+                                <a href="http://searchsecurity.techtarget.com/definition/Secure-Shell">(source)</a></mark></dd>
+                            </dl>
+                        
+                            <dl>
+                                <dt><mark>FTP (File Transfer Protocol)</mark></dt>
+                                <dd><mark><q>File Transfer Protocol (FTP) is a standard network protocol used to transfer files from one host to another host over a TCP-based network, such as the Internet.</q>
+                                <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">(source)</a></mark></dd>
+                            </dl>
+                        <br></dd>
+                        <dt id="q1.4">Question 4 - What is the IP address of http://www.few.vu.nl? And of http://www.cs.vu.nl? Explain how you found the answer. How are these addresses related?</dt>
+                        <dd><mark>We looked the IP adresses up with nslookup. The IP adresses of both sites are 130.37.20.20</mark><br><br></dd>
+                        <dt id="q1.5">Question 5 - There are many www.example.??? domains, including http://www.example.org, http://www.example.com or http://www.example.nl.
+                        Explain their role. Discuss which organisations have registered these domains and why.</dt>
+                        <dd><mark>The final label is the top-level domain. The domains .com and .org are generic, and .nl and .be for example are country-codes.
+                        Example.nl is registered by the company behind .nl called SIDN and example.com and example.org are managed by IANA. You may use these domains for illustrative examples in documents.</mark><br><br></dd>
+                        <dt id="q1.6">Question 6 - Look up information about the new protocol for IP addresses (version 6). Describe the main features of this protocol and indicate what the reasons are to move from version 4 to version 6.</dt>
+                        <dd><mark>IPv6 is a replacement for IPv4. IPv4 contains 32 bits, while IPv6 contains 128 bits. This means the amount of possible adresses are 2^128=3,4x10^38. A IPv6-address,
+                        as defined in RFC2373, RFC2374 en RFC2460, is 128 bits, which is equal to 32 hexidecimal numbers. These numbers are used to form IPv6-addresses. The IP-adresses are written in 8 groups of 4 hexidecimal numbers,
+                        ex. <q>3ffe:6a88:85a3:08d3:1319:8a2e:0370:7344</q>. <a href="http://nl.wikipedia.org/wiki/Internet_Protocol_versie_6">(source)</a></mark><br><br></dd>
+                        <dt id="q1.7">Question 7 - Find out who the registry operator for the .nl domain currently is. What is the role of this organisation in the Netherlands?</dt>
+                        <dd><mark>The <abbr title="Stichting Internet Domeinregistratie Nederland">SIDN</abbr> is a registry operator that runs the top level domain .nl since 1996.</mark><br><br></dd>
+                        <dt id="q1.8">Question 8 - What are the three essential technologies that Tim Berners-Lee created to build the World-Wide Web on top of the already existing Internet infrastructure?</dt>
+                        <dd>
+                            <ul>
+                                <li><abbr title="HyperText Transfer Protocol"><mark>HTTP</mark></abbr></li>
+                                <li><abbr title="HyperText Markup Language"><mark>HTML</mark></abbr></li>
+                                <li><abbr title="Uniform Resource Identifier"><mark>URI</mark></abbr></li>
+                            </ul>
+                        <br></dd>
+                        <dt id="q1.9">Question 9 - Look at the following two HTML paragraphs and explain why the HTML of the first paragraph should be preferred.
+                        Illustrate this with an example. Also, identify two other pairs of HTML constructs for which the same rationale holds.<br>
+                        "&lt;p&gt;This is an &lt;strong&gt;important&lt;/strong&gt; point.&lt;/p&gt;"<br>
+                        "&lt;p&gt; This is another &lt;b&gt;important&lt;/b&gt; point.&lt;/p&gt;"</dt>
+                        <dd><mark>&lt;strong&gt; is preferred because it is an indication of how something should be understood. &lt;b&gt; is used as a style,
+                        you use it when you want to make something bold. For blind people this difference is significant.
+                        A speaking machine read the lines out loud, and through 'strong' they will know that you want to emphasis that word/sentence.
+                        This is also the case with &lt;em&gt; and &lt;i&gt;.</mark><br><br></dd>
+                        <dt id="q1.10">Question 10 - Identify one similarity and one difference between the HTML elements span and div.</dt>
+                        <dd><mark>"span" is used to wrap small portions of text, images etc, while "div" is used to wrap sections of a document.
+                        Both "span" and "div" are used to mark a section of a page with an id or class.</mark><br><br></dd>
+                        <dt id="q1.11">Question 11 - Describe the pros and cons of using frames in HTML.</dt>
+                        <dd><mark>Pros: Using frames you can keep one part of the page static, whilst changing another part. Frames are often used for navigation menus.<br>
+                        Cons: Frames do not work well on all the webbrowsers.</mark>
+                        <br><br></dd>
+                        <dt id="q1.12">Question 12 - List potential benefits of using CSS.</dt>
+                        <dd><mark>The benefits of using CSS: Search engine optimization - By using CSS, search engines will have the aptitude to locate you much easier since its features are easy to read. This way, search engines can easily handle your site.
+                        / Browser Compatibility - It does not matter on which browser (IE, Safari etc.) your visitors open your site, CSS makes sure your site will be displayed exactly as you have designed it.
+                        / Appearance style capableness. / Maintainability - CSS makes it possible to maintain your website easily and quickly. You can change a lot at once.
+                        <a href="http://www.wahm.com/articles/5-advantages-of-css-in-website-design.html">(source)</a></mark><br><br></dd>
+                        <dt id="q1.13">Question 13 - How would you expect a Web browser to render an emphasized word (i.e., included in an em element) in a paragraph with an italic font style?
+                        Check whether your browser behaves according to your expectation.</dt>
+                        <dd><mark>It is not possible to make it more <em>italic</em>, so it just stays normal <em>italic</em>.</mark><br><br></dd>
+                        <dt id="q1.14">Question 14 - Pick two web browsers from the list below. What are in your view the key differences between the two browsers?
+                            <ul>
+                                <li>Apple Safari</li>
+                                <li>Google Chrome (or Chromium on Debian Linux)</li>
+                                <li>Microsoft Internet Explorer</li>
+                                <li>Mozilla Firefox (or Iceweasel on Debian Linux)</li>
+                                <li>Opera Web Browser</li>
+                            </ul>
+                        </dt>
+                        <dd><mark>We compared Google Chrome and Mozilla Firefox. The key differences between these two browsers is the layout engine. Chrome uses a layout engine called webkit,
+                        while Firefox uses one called Gecko. The layout engines are important, and updates are necessarly for the browser to understand new instructions.</mark><br>
+                        <img src="http://images.androidworld.nl/wp-content/uploads/Google-Chrome-Featured.png" alt="Google Chrome" height="42" width="42">
+                        <img src="http://screenshots.nl.sftcdn.net/blog/nl/2012/11/firefox-17-logo-blogpost.png" alt="Mozilla Firefox" height="39" width="39"></dd>
+                    </dl>
+                </div>
+                <div id="tab2">
+                    <h2>Lab #2</h2><br>
+                    <dl>
+                        <dt id="q2.1">Question 1 - Find out what a 303 status code in response to a HTTP/1.1 request stands for. Which authoritative source(s) have you used?</dt>
+                        <dd><mark>The status 303: See Other is a method to redirect a page to another. <a href="http://en.wikipedia.org/wiki/HTTP_303">(source)</a></mark><br><br></dd>
+                        <dt id="q2.2">Question 2 - What are MIME types? Find out which MIME types of type text there are. Which authoritative source(s) have you used?</dt>
+                        <dd><mark>MIME-types were initially introduced on top of the emailformat, which only used to support data in ASCII-format.
+                        With this it became possible to write messages in different character sets and to send and receive images. There are several MIME-types of type text: text/plain; text/html; text/css
+                        </ul><a href="http://nl.wikibooks.org/wiki/HTML/MIME-types">(source)</a></mark><br><br></dd>
+                        <dt id="q2.3">Question 3 - What do the abbreviations "ISO/IEC 8859-15" and "UTF-8" refer to? Explain the key differences.</dt>
+                        <dd><mark>ISO stands for Internationale Organistatie voor Standaardisatie/Imtermational Electrotechnical Commision and 8859-15 is the name assigned by the IANA.
+                        UTF-8: 8-bit Unicode Transformation Format. The key difference between these two is that the ISO is mainly used for western languages and the UTF coding for universal usage.
+                        With UTF every character doesnt use the same amount of bytes.</mark><br><br></dd>
+                        <dt id="q2.4">Question 4 - HTTP is a so-called stateless protocol. Explain what this means. Name at least one advantage and disadvantage of the fact that HTTP is stateless.</dt>
+                        <dd><mark>A stateless protocol is a communications protocol. Every request is treated as an independent transaction that is unrelated to any previous requests.
+                        The communication consists of independent pairs of requests and responses. The advantage of this is that no information of a session from multiple users are saved.
+                        A disadvantage is that it is possible that double information has to be sent, which is not necessary if it would not be a stateless protocol.</mark><br><br></dd>
+                        <dt id="q2.5">Question 5 - The HTTP GET method is assumed to be idempotent. Explain how idempotent requests simplify the implementation of a caching HTTP proxy,
+                        how so-called "visitor counters" often break this assumption and how such counters might be negatively affected by proxies.</dt>
+                        <dd><mark>Idempotent means that it does not matter if a request is called more than once. It will have no additional effect. When a visitor counter counts the amount of visitors.
+                        Everytime when a 'visitor-counter' counts the amount of visitors, it actually shows a different page: because everytime there is a different amount of visitors.
+                        A proxy ensures that more than one visitor can visit a page with the same ip-adres, they will be seen as the same visitor. Which means that the counter doesnt go up.</mark><br><br></dd>
+                        <dt id="q2.6">Question 6 - One of the first applications of HTTP cookies was to add "shopping basket" functionality to the web sites of online shops.
+                        Explain why such sites are hard to build without cookies, and how cookies are used to implement electronic "shopping baskets". (max 100 words)</dt>
+                        <dd><mark>A server sends a cookie, which is an unique data-element, to a visitor. This cookie contains the description of the status of the session.
+                        Every time when the server has a visitor, the cookie will get recalled with the associated information. Shopping baskets use this to see which items belong to which users.
+                        Without cookies it would be some what impossible to associate the right information to every unique user.</mark><br><br></dd>
+                        <dt id="q2.7">Question 7 - Briefly discuss the key (non-technical) drawback of cookies.</dt>
+                        <dd><mark>The negative (non-technical) part about cookies is the privacy of the users. For example: tracking cookies makes it possible for advertisement agencies to follow what kind of website the visitor has been.
+                        And can put advertisement signs on several sites.</mark><br><br></dd>
+                        <dt id="q2.8">Question 8 - Discuss the relationship between HTML 4.01, XHTML 1.0, SGML and XML. (max 200 words)</dt>
+                        <dd><mark>XML is a subset of SGML with a more strict syntax. Which makes it easier and readable for both machines and humans. XML is also case-sensitive, which SGML on the other hand is not
+                        HTML 4.01 is based on SGML. It is from 1999. Contrary to SGML, it is not possible for it to use of self defined tags.
+                        XHTML 1.0 is based on XML. It is not really comparable with HTML 4.01. Some short cuts are for example not allowed in HTML 4.01.</mark><br><br></dd>
+                        <dt id="q2.9">Question 9 - Can you use Chinese or Arabic in your XML tags? Why or why not?</dt>
+                        <dd><mark>As long as your chosen character-encoding supports the desired characters, the characters of these languages can be used.</mark><br><br></dd>
+                        <dt id="q2.10">Question 10 - What is the difference between a Java applet and a Java servlet? Give a typical applet and a typical servlet example.</dt>
+                        <dd><mark>An applet runs on the side of the client, while a servlet runs on the other side which is the side of the server. The output of a servlet is html,
+                        while the server will need an installation of the Java Virtual Machine to be capable to interpret the java code. To start up the JVM costs a lot of time and memory for the computer of the user.</mark><br><br></dd>
+                        <dt id="q2.11">Question 11 - What version of PHP is running on http://www.few.vu.nl/ ? What is the value of PHP's default timezone?</dt>
+                        <dd><mark>The server runs on PHP version 5.2.4.. And the default time zone on the server is GMT +0:00. Showing errors is useful to debug internet pages,
+                        but with this it will be even possible for hackers to use these errors to get more information about the sites safety and developers.</mark><br><br></dd>
+                        <dt id="q2.12">Question 12 - Turn on error reporting by using ini_set('display_errors', 1); and test if this works.</dt>
+                        <dd><mark>After inserting the error in the PHP file, the following showed up: Notice: Use of undefined constant ifeles - assumed 'ifeles' in /home/solo-student0-secure/tnn720/www/test.php on line 3.
+                        Showing errors is useful to debug internet pages, but with this it will be even possible for hackers to use these errors to get more information about the sites safety and developers.</mark></dd>
+                    </dl>
+                </div>
+                <div id="tab3">
+                    <h2>Lab #3</h2><br>
+                    <dl>
+                        <dt id="q3.1a">Question 1a - Have a closer look at the term frequency matrix. Given this table, how well do you think the tokenizer did its job? Do you see any room for improvement.</dt>
+                        <dd><mark>Except for the fact that it also counts the plural of a word as an apart token, the tokenizer eliminates symbols and such well.</mark><br><br></dd>
+                        <dt id="q3.1b">Question 1b - Looking at the top 30, does it make sense to include all of them in the stop words list? Explain your answer.</dt>
+                        <dd><mark>The words in de top 30 are words like 'the', 'it', 'a' etc. You use them a lot when making sentences.
+                        So, it would not make sense to include them in the stop words list since you can not really avoid using those words.</mark><br><br></dd>
+                        <dt id="q3.1c">Question 1c - Looking at the top 30, do you think the frequency follows Zipf&#39s law? You can run z <- zipf(alice_index$total) to find out.
+                        Explain in your own words what "following Zipf&#39s law" means in this case.dt></dt>
+                        <dd><mark>It does apply in this case. The frequency of the top 1 word ('the') is twice as big as the top 2 word ('and'), and it also appears three times more than the third most frequent word.
+                        The second most frequent word appears twice as often as the fourth most frequent word etc. And this is exactly what the Zipf's law means.
+                        <figure><img src="http://i40.tinypic.com/29fql3m.png" alt="zipf" height="200" width="300"></figure><br></dd>
+                        <dt id="q3.1d">Question 1d - Similarly, run h <- heaps(alice_index$total) to determine whether Heaps&#39 law applies. Explain in your own words what "Heaps&#39 law applies" means in this case.</dt>
+                        <dd><mark>The figure does shows that the Heaps' law applies in this case. The diagram shows that the number of words that added to the list is increasing slower.
+                        At the beginning the list is still short, it does not contain a lot of words. Therefore it will hit upon the most frequent words rather quickly, because that word does not exists yet in the list.
+                        Though this process will increasing slower, you will continue to encouter new words till you have had all the words. Theoretically, when this happens the diagram will be horizontal at the end.</mark>
+                        <figure><img src="http://i39.tinypic.com/2qumdc6.png" alt="heap" height="200" width="300"></figure><br></dd>
+                        <dt id="q3.2a">Question 2a - How do you assess the quality of the TF-based search. What can you say about precision and recall?</dt>
+                        <dd><mark>To assess the quality of the TF-based search you have to look at the outcome. Words which are useful have a lower TF than stop words. The precision is the fraction of retrieved instances that are relevant,
+                        while recall is the fraction of relevant instances that are retrieved. With the TF-based search you will know a lot more about the precision.</mark><br><br></dd>
+                        <dt id="q3.2b">Question 2b - Computing the TFIDF matrix takes quite some time. Why is that, do you think?</dt>
+                        <dd><mark>To make the TFIDF matrix it is needed to calculate the term frequency score and inverse document frequency first for every word. These two need to be multiplied with eachother to get the TFIDF score
+                        and after doing this the matrix can be made. That is why it takes so long to produce the matrix.</mark><br><br></dd>
+                        <dt id="q3.2c">Question 2c - Compare the TF-based search with the TFIDF-based search. What has changed? How do you compare the quality of the searches. What can you say about precision and recall?</dt>
+                        <dd><mark>The TFIDF-based search is produced with the combination of the TF-based and IDF-based search. The quality of this search is better because now you will know a lot more about the recall too.
+                        With the TFIDF-based search you will know more about the precision and recall.</mark><br><br></dd>
+                        <dt id="q3.2d">Question 2d - Alice in Wonderland only has 11 chapters, what can you say about the precision at k where k=5 for both types of searches.
+                        That is, what if you would only look at the 5 highest ranked results, and discard the other results as irrelevant.</dt>
+                        <dd><mark>While looking at the highest five results, you can't really tell anything about the significance of the words. Because as proven in question 1a, the most frequent words are all stop words.</mark><br><br></dd>
+                        <dt id="q3.2e">Question 2e - What would happen to precision and recall if you implemented the improvements to the tokenizer you suggested in question 1a.?</dt>
+                        <dd><mark>The precision and recall will have a better quality, because the top 30 most used words will no longer be only stop words.</dd>
+                    </dl>
+                </div>
+                <div id="tab4">
+                    <h2>Lab #4</h2><br>
+                    <dl>
+                        <dt id="q4.1">Question 1 - Describe the major similarities and differences between Java and JavaScript.</dt>
+                        <table class="sortable">
+                            <tr>
+                                <td><b>Similarities</b></td> <td><b>Differences</b></td>
+                            </tr>
+                            <tr>
+                                <td>They are both Object Oriented Programming  (OOP)</td>
+                                <td>Java is produced by Sun Microsystems and Javascript by Netcape.</td>
+                            </tr>
+                            <tr>
+                                <td>A lot of commands are similar to eachother</td>
+                                <td>Javascript has easier and less commands than Java</td>
+                            </tr>
+                        </table><br><br>
+                        <dt id="q4.2">Question 2 - What does the acronym "AJAX" stand for? Explain the role of the term the first "A" refers to.</dt>
+                        <dd><mark>AJAX stands voor Asynchronous Javascript And XML. Asynchronous means that the webpages will not be refreshed completely.
+                        It will not be necessary to exchange this information, which means it is independent of eachother</mark><br><br></dd>
+                        <dt id="q4.3">Question 3 - What is the role of the host objects in JavaScript? Name two often used host objects. Why are there no equivalents in Java?</dt>
+                        <dd><mark>Host objects are given by the browser and are used to interact with the loaded document. Document and Window are two of the mostly used host objects in Javascript.
+                        In Java they do not appear as a standalone program, and also not as a program which is embedded in HTML.</mark><br><br></dd>
+                        <dt id="q4.4">Question 4 - Name two objects that are built into the JavaScript language. Briefly explain their role.</dt>
+                        <dd><mark>Math and String are both built into the JavaScript language. Math is used to calculate equations and String is used to store and display text.</mark><br><br></dd>
+                        <dt id="q4.5">Question 5 - Briefly explain the role of events and event listeners in JavaScript.</dt>
+                        <dd><mark>Events can be taken literally, it is what happens during browsing, or after an operation has been made. It can be when a user strokes a key or when an input field is changed.
+                        Events are normally used together with functions. The function will not be executed before the event occurs. Event listeners trigger events.</mark><br><br></dd>
+                        <dt id="q4.6">Question 6 - How do you set in CSS a document's background color to the color with RGB values 255,255,255 using decimal numbers and the functional notation?
+                        (tip: check section 4 of the CSS Level 2 Recommendation)</dt>
+                        <dd><mark>By adding this line to the CSS file: background-color: rgb(255, 255, 255)</mark><br><br></dd>
+                        <dt id="q4.7">Question 7 - How do you achieve the effect of the previous question using JavaScript and the DOM API instead of CSS?
+                        (Tip: give the answer, but also include the same JavaScript in a script element into this document and check if it really works with several color values.
+                        This will save you time with answering the next question!)</dt>
+                        <dd><code><mark>function background() { document.body.bgColor="rgb(225,225,225)"; }</mark></code><br><br></dd>
+                        <dt id="q4.8">Question 8 - Suppose a third-party software component generates an event object e, where e.newValue is a JavaScript array of R, G, B values.
+                        Write an event listener function that takes such an event as an argument and uses the color value to set the current document's background color. (Tip: check if the function really works.
+                        This will save you time making Assignment 3!)</dt>
+                        <dd><code><mark>function myFunction(e.newValue) { document.body.style.backgroundColor='rgb('+[e.newValue[0],e.newValue[1],e.newValue[2]].join(',')+')';}</mark></code><br><br></dd>
+                        <dt id="q4.9">Question 9 - Many organisations provide lectures or tutorials on web technology and publish videos and slides of these lectures on the web in so called "webinars".
+                        These lectures provide an often overlooked, but rich source of information. Watch the video of Mano Marks' Google Map API tutorial.
+                        Explain in 3 lines the functionality of the autocomplete component that Marks describes. (again, a good understanding the Google MAP API might save you time making Assignment 3).
+                        See the Google Website for more information on the API.</dt>
+                        <dd><mark>Autocomplete lets you put one input box on your page and users can type their request in realtime. You have to add a libraries parameter into the java script loader.
+                        These are integrated librabies with the API code.</mark></dd>
+                    </dl>
+                </div>
+                <div id="tabphp">
+                    <h2>PHP Documentation</h2><br>
+                    <dl>
+                        <dt><code>require "CsvDatabase.php";</code></dt>
+                        <dd>With this the php file called Database will be required.<br><br></dd>
+                        <dt><code>header('Content-type: application/json');</code></dt>
+                        <dd>With this the script will be able to use json.<br><br></dd>
+                        <dt><code>$database = new CsvDatabase("data/datalist.csv");</code></dt>
+                        <dd>With this the file with the needed information about the inflation will be saved as the variable database.<br><br></dd>
+                        <dt><code>$method = $_SERVER['REQUEST_METHOD'];</code></dt>
+                        <dd>The requested method is saved into a variable called method.<br><br></dd>
+                        <dt><pre>switch ($method) {
+                        case 'GET':
+                        getData();
+                        break;
+                        }</pre></dt>
+                        <dd>This piece of code is comparable with an if-statement. It checks which request is equal to the method, and whether it is not GET it will switch into the right method, hence the name switch.<br><br></dd>
+                        <dt><code>function getData()</code></dt>
+                        <dd>First it uses the global variable data, then takes the year and month using the <code>$_GET</code> command, which are saved in variables with the same name. Then a variable is made with all the containing data.
+                        But because it is not sure whether the requested year and month is in the data, it needs an if-statement. This if-statement uses count to count the amount of times the requested year and month appears in the data.
+                        If this is equal to zero, then an error of type 404 will appear. Else the associated values will appear on the screen as response.<br><br></dd>
+                        <dt><code>function putData()</code></dt>
+                        <dd>This function also uses the global variable data. With the command <code>file_get_contents("php://input");</code> it will get the necessary contents.
+                        These contents are saved as the variable raw_input. But before it can be added to the data, it has to be decoded first.
+                        Which will happen with the command: <code>json_decode($raw_input, true);</code>. After this it can now be added to the database: <code>$database->create_or_replace($json);</code><br><br></dd>
+                        <dt><code>function deleteData()</code></dt>
+                        <dd>Given an input (<code>file_get_contents("php://input");</code>), this function allows you to delete an entry from the database.
+                        The raw input has to be decode first with the command: <code>$delete = json_decode($raw_input, true);</code>.
+                        Two variables are made: <code>$year = $delete['year'];</code> and <code>$month = $delete['month'];</code>, the first variable deletes the "year"-data, while the second deletes the "month"-data.
+                        These two variables will be given as parameters for the command that will delete the entry from the database: <code>$database->delete($year, $month);</code><br><br></dd>
+                        <dt><code>function select_month()</code><dt>
+                        <dd>This function selects a single month from the array of all months.<br><br></dd>
+                        <dt><code>function matches()</code></dt>
+                        <dd>This function checks the data you are searching for, to see if it is really available in the database. It 'matches' the search command with the data in the database. If it does match, it will return the sought data.</dd>
+                    </dl>
+                </div>
+                <div id="tab5">
+                    <h2>Lab #5</h2><br>
+                    <dl>
+                        <dt id="q5.1">Question 1 - Acquaint yourself with principles of color contrast, e.g. through the Color Contrast Check. Test three color combinations and write a short report of the results and how these should be interpreted.</dt>
+                        <dd>
+                            <table class="sortable">
+                                <caption>Test</caption>
+                                <tr>
+                                    <td>#</td><td><b>Foreground Colour</b></td> <td><b>Background Colour</b></td> <td><b>Compliant</b></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td> <td>#002FAC</td> <td>#FFEBEC</td> <td>YES</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td> <td>#FF2FAC</td> <td>#F6FFEC</td> <td>sort of...</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td> <td>#64ADAC</td> <td>#AC5B00</td> <td>NO</td>
+                                </tr>
+                            </table><br>
+                            <mark>The results of the first test showed that the colours were compliant, meaning the foreground and the background colour provided enough contrast. The other two scored 'NO' and 'sort of...',
+                            when combined the foreground and background colour the colour difference and the brightness difference do not exceeded their threshold. Therefore they did not provide enough contrast.</mark><br><br></dd>
+                        <dt id="q5.2">Question 2 - Make sure you understand the difference between a Native app versus a Web app. Discuss at least one advantage of native apps over web apps and vice versa.</dt>
+                        <dd><mark>A <strong>Native app</strong> is an app developed for one particular mobile device that you can directly install onto the device itself. These apps can be downloaded via online appstores or the app-markets:
+                        Google Play Store, Apple App Store etc. An example of a Native app is WhatsApp. The pros of Native Apps is that they are easier to work with and perform faster since they are directly installed in the device and work
+                        with the device's built-in features.<br><br><strong>Web Apps</strong> are Internet-enabled apps that you can access via the mobile devide's Web browser. They do not have to be downloaded onto the mobile device in order
+                        to be accessed. An example of a Web App the Safari browser. A profit of Web Apps is that they are easier to maintain than Native Apps, as they have a common code base across multiple mobile platforms. They can be accessed with any older mobile device.</mark><br><br></dd>
+                        <dt id="q5.3">Question 3 - Summarize the key multilingual issues that W3C is addressing within the "Internationalization" activity.</dt>
+                        <dd><mark>The <strong>Internationalization (I18N) Working Group</strong> is part of the W3C Internationalization Activity. Their aim is to provide internationalization advice to, and review other Working Groups.
+                        By proposing and coordinating the adoption by the W3C of techniques, conventions, and designs that enable and enhance the use of W3C technology and the Web worldwide, they want to achieve their goal,
+                        that is to enable universal access to the World Wide Web.</mark><br><br></dd>
+                        <dt id="q5.4">Question 4 - The website http://www.archive.org stores old versions of the Web. Use this archive to describe briefly the history of Google or some other site you're interested in.</dt>
+                        <dd><mark>We looked up the video-sharing website <u><a href="http://www.youtube.com">YouTube</a></u>. The site was founded by three employees of PayPal, Chad Hurley, Steve Chen and Jawed Karim in February 2005. From the data on web.archive.org,
+                        you can see that the site was not originally just a video-sharing website. Its orginal idea was a video version of an online dating service (see image beneath, from april 2005). The site stayed beta for next few months until the official launch in November 2005.
+                        YouTube has now become one of the most visited sites, with more than 1 billion visitors each month.</mark><br><br>
+                        April 2005&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;November 2005<br>
+                        <a href="https://web.archive.org/web/20050428014715/http://www.youtube.com/"><img src="http://i42.tinypic.com/jf9cgk.png" height="60" width="100"></a> <a href="https://web.archive.org/web/20051125043657/http://www.youtube.com/"><img src="http://i41.tinypic.com/k16xsj.jpg" height="60" width="100"></a><br>
+                        <em>(Click for site)</em><br><br></dd>
+                        <dt id="q5.5">Question 5 - Choose an existing website and imagine that you are designing an A/B test to evaluate changes to that website. Information on A/B tests can be found at http://www.useit.com/alertbox/20050815.html.
+                        Discuss the two versions of the site you would want to test, which part of the site you would vary, and how you would measure performance of each version.</dt>
+                        <dd><mark>We used the site <a href="http://www.boredpanda.com/">Boredpanda.com</a>. The advertisement banner looks a lot like the menu, so to prevent any mistakes, we would put the advertisement banner in the footer. We realized that there wasn't even a menu tab. So we would add the menu tabs and make it very dynamic.
+                        We would put a border around each word, so it will stand out more. It is a website for a magazine, so it is quite necessary to have a menu tab. With this, it will be easier for the users to find an article, because everything will be divided in clear sections. Our adjustments will be version A
+                        and how the site is now will be version B. We are going to count everytime one of the menu tabs are clicked.</mark><br><br></dd>
+                        <dt id="q5.6">Question 6 - Choose an existing web site and build a mini-survey that could appear as a popup on that web site. Explain (briefly) the purpose of your survey, and why you choose to use open questions,
+                        yes/no questions and/or questions on a scale (e.g the Likert scale). The html of the survey should work, but obviously it does not need to work on the web site you chose. Include a link to that web site instead.</dt><br>
+                        <dd><em>(Click 'submit' for html-code)</em>
+                        <div id="surveyform">
+                            <p><strong>Please, give your opinion!</strong></p>
+                            <form action="http://www.few.vu.nl/~tnn720/lab5ans6.txt">
+                                <p>Is it your first time visiting <strong><a href="http://www.boredpanda.com">Boredpanda.com</a></strong>?<br>
+                                <input type="radio" name="visit" value="yes">Yes
+                                <input type="radio" name="visit" value="no">No<br><br>
+                                How would you rate the website's design?<br>
+                                <input type="radio" name="design" value="1">1
+                                <input type="radio" name="design" value="2">2
+                                <input type="radio" name="design" value="1">3
+                                <input type="radio" name="design" value="2">4
+                                <input type="radio" name="design" value="1">5
+                                <input type="radio" name="design" value="2">6
+                                <input type="radio" name="design" value="1">7
+                                <input type="radio" name="design" value="2">8
+                                <input type="radio" name="design" value="1">9
+                                <input type="radio" name="design" value="2">10<br><br>
+                                What about the colours?<br>
+                                <input type="radio" name="colours" value="like">I like the colours.<br>
+                                <input type="radio" name="colours" value="hurt">They hurt my eyes.<br>
+                                <input type="radio" name="colours" value="boring">The colours make the site look boring.
+                                <br><br><input id="d8" type="submit" value="Submit"></p> 
+                            </form>
+                        </div><br><br></dd>
+                        <dt id="q5.7">Question 7 - Jakob Nielsen publishes a bi-weekly column on usability. Choose one of his columns from http://www.useit.com/alertbox/, give a short summary of the column (in your own words),
+                        and give an example of a web site that clearly does or does not implement the guidelines in the column. Pick your own example, the site should not be mentioned in the column.</dt>
+                        <dd><mark>'University Websites: Top 10 Design Guidelines', describes ten design guidelines for university websites. 
+                        They find this very important because undergraduate students aren't always capable to acquire the answers for their questions. 
+                        The first point they discuss is to put the name of the university on every page, because not all the visitors arrive at the homepage. Second point is that it suggests to use images that will represent the university. 
+                        Third point is that the 'About us' page should be short and clear. It should be written in simple language and state short facts. This will make it a lot less boring to read. 
+                        Fourth fact is to highlight the strength and achievements of the university. Fifth fact is to make it easy to access all the majors and programs. 
+                        Sixth fact is to link job placements after graduation to the associated major or program. Seventh point is to state all the deadlines clearly and to offer the visitors a step-by-step description of the application progress. 
+                        Eight point is to check the user's journey. While doing this you will encounter duplicate, contradictory or missing information.
+                        Nineth point is to use an age-appropriate language. This will be achieved by letting your students do the talking.
+                        Last point is to check for information about the university on external sites. Because students who didn't find their answer will go to these external sites.
+                        The <a href="http://www.vu.nl/nl/index.asp"> VU website </a> clearly abides to these guidelines.It has the name on every page, it uses images that represent the univesity.
+                        It is easy to find the list with all the majors and programs. On these pages it is also possible to find the job opportunities after graduation. This site clearly implements these guidelines</mark><br><br></dd>
+                        <dt id="q5.8">Question 8 - Explain how the Common Log Format helps developing Web log analysis software. Briefly describe a scenario in which such software is used to improve a web site's link structure.</dt>
+                        <dd><mark>When generating server log files, web servers use the Common Log Format (also known as NCSA Common log format). This is a standardized text file format, and because of its standardized format, the files can be analyzed by a variety of web analysis programs.
+                        Each line in a file stored in the Common Log Format has the following syntax:<br><pre>host ident authuser date request status bytes</pre></mark><br></dd>
+                        <dt id="q5.9">Question 9 - Read the recent Australian news article Online accessibility for disabled becomes a must. Discuss how the Australian situation compares to your own home country.
+                        Summarize your point of view on the key differences and similarities.</dt>
+                        <dd><mark>The situation in the Netherlands and Australia are quite similar. In the Netherlands 20 percent of the people are also disabled. <a href="http://allesovergehandicaptensport.wordpress.com/2011/11/03/hoeveel-mensen-met-een-handicap-zijn-er-in-nederland-en-hoeveel-sporten-er-daarvan/">(source)</a> 
+                        I think it will be clever idea to make online accessibility for disabled people also a must in the Netherlands.</mark></dd>
+                    </dl>
+                </div>
+                <div id="tab6">
+                    <h2>Lab #6</h2><br>
+                    <dl>
+                        <dt id="q6.1">Question 1 - Find out what OpenID is about. Describe briefly its rationale.</dt>
+                        <dd><mark>OpenID is a service which makes it possible to centralize your login information. Using OpenID, users don't have to make an account for different websites. 
+                        He or she only has to use his or her OpenID</mark><br><br></dd>
+                        <dt id="q6.2">Question 2 - Compare the OpenID service with a similar service such as Facebook Connect.</dt>
+                        <dd><mark>Facebook offers you to use your facebook account for different websites or applications. 
+                        For example: while using the music downloading application called Spotify it is possible to use your Facebook account to log in.</mark><br><br></dd>
+                        <dt id="q6.3">Question 3 - Wikipedia defines itself as &quot;the free encyclopedia that anyone can edit&quot;. Give one example of a typical task for which Wikipedia is a potentially suitable source of information,
+                        and a task for which it is not. Explain your answer briefly.</dt>
+                        <dd><mark>Typical tasks for using Wikipedia are: looking up book titles, or songs, or to look up lists such as filmographies. These are good enough to use for yourself, but when you want to use it as a source for something important as your university paper.
+                        It would be a very bad idea, because the information you acquire changes a lot and the authors are unknown and therefore not to be trusted.</mark><br><br></dd>
+                        <dt id="q6.4">Question 4 - Assume you have written a novel and want to make it avilable on the Web (on terms of your own choice). Consider whether one of Creative Commons licenses would be of use to you.</dt>
+                        <dd><mark>The license called: Attribution-NonCommercial-NoDerivs CC BY-NC-ND and Attribution-NoDerivs CC BY-ND will be very useful in this case. 
+                        If it is possible for users to remix, tweak and build upon the novel, it will not benefit the author. 
+                        The only thing necessary for the author is that his or her novel will be shared and that the credit is kept his or her.</mark><br><br></dd>
+                        <dt id="q6.5">Question 5 - Explain what the term the long tail refers to. Most brick-and-mortar shops of books, games and music are forced to focus and sell only a few best-selling products. Why can the long tail still be profitable for online shops?</dt>
+                        <dd><mark>It is a tail of the probability distribution, where the bigger part of the population lies than the normal distribution. It is a lot more profitable for online shops because the bigger part of the population lies in the tail.
+                        Because an online shop is a lot bigger than normal shops.</mark><br><br></dd>
+                        <dt id="q6.6">Question 6 - W3C is the organization that publishes Web standards such as HTML and CSS. Describe the history of this organization and the role companies play in this organization.</dt>
+                        <dd><mark>Tim Berners-Lee is since the beginning of W3C the director of the World Wide Web Consortium. 
+                        He created the whole World Wide Web on his own, and also made the first server for it called httpd. He is also the creator of the browser and editor.
+                        The year after the creation of W3C, Tim Berners-Lee made his first version of the Hyper Text Markup Language: HTML, this became the 'primary publishing format'.
+                        He is also the first to use the terms: URL and HTTP. These terms were worked out by the users of the web.
+                        W3C produced PNG, CSS and wrote HTML4.0, they also added a lot to XML to make it more accesible and easier to make.
+                        They couldn't achieve this without working with companies as CERN, which helped with the basis of the World Wide Web.
+                        DARPA and the Europian Commision also helped them. INRIA was the first european W3C host, which was followed by the company ERCIM.</mark><br><br></dd>
+                        <dt id="q6.7a">Question 7a - Watch this interview with Sir Tim Berners-Lee on net neutrality. Define net neutrality (use other sources if needed).</dt>
+                        <dd><mark>Net Neutrality is when one person pays to connect to the net with a given a quality of service, and another person pays to connect with the same or higher quality service it is possible to connect to each other.</mark><br><br></dd>
+                        <dt id="q6.7b">Question 7b - Do you agree with the statements of Sir Tim in this video? Give arguments for your position.</dt>
+                        <dd><mark>I agree with the statements. It is true that telecompanies are using people to pay more for the service.
+                        Freedom of connection is really the fundamental social basis of the internet. Because we have to give it to people so they can use it freely.</mark><br><br></dd>
+                        <dt id="q6.8a">Question 8a - Read the either the English Newspaper publishers warn Apple over iTunes sales. or the Dutch newspaper article Apple zet uitgevers buitenspel op iPad  
+                        Summarize both the position of Apple and that of the European news publishers.</dt>
+                        <dd><mark>The position of Apple is about giving customers a choice. The position of the European news publishers is that users will not be allowed to subscribe via newspapers' own websites 
+                        and that the information such as age, sex and location will be lost.</mark><br><br></dd>
+                        <dt id="q6.8b">Question 8b - Explain how this case relates to the broader issue of net neutrality as discussed in the previous question</dt>
+                        <dd><mark>This case relates to the discussion of net neutrality because there is a conflict between the people and the companies.</mark><br><br></dd>
+                        <dt id="q6.9">Question 9 - Read the article Spotify Counters Criticism From Radiohead's Thom Yorke. Discuss the pros and cons of Spotify's business model. Give also your own opinion about online access to music.</dt>
+                        <dd><mark>Spotify is a commercial music streaming service. The amount of royalty the music rights holders get is based on the number of times their songs is being played by users. This can be a profit, as the more popular songs can earn much more.
+                        But the criticism lies in the fact that they do not compensate the artists fairly, as smaller or indie labels receive no minimum per stream. We think online access to music is a great way to actually pay the artists for their art instead of illegal downloading.</mark><br><br></dd>
+                        <dt id="q6.10">Question 10 - Explain the role of data.gov in the discussion about a more transparent government. What could be a potential danger of sites like data.gov?</dt>
+                        <dd><mark><q>Under the terms of President Obama&#39s Executive Order and the Administration&#39s Open Data Policy, all newly-generated government data are required to be made available in open, machine-readable formats, while continuing to ensure privacy and security.</q>
+                        <a href="https://www.data.gov/faq">(source)</a></mark></dd>
+                    </dl>
+                </div>
+            </div>
+            </div>
+        </div><br><br>
+        <p id="return">&nbsp;&nbsp;&nbsp;Return to &nbsp;<a href="http://www.few.vu.nl/~tnn720/WebTechnology/homepage.html"><img src="http://web.uri.edu/assessment/wp-content/themes/urideptbranch/images/mobile/home.png" height="12" width="12"></a>
+        &nbsp;/&nbsp; Give us <a href="http://www.few.vu.nl/~tnn720/WebTechnology/feedback.html">feedback</a>!</p>
+
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $("#content").find("[id^='tab']").hide(); // Hide all content
+            $("#tabs li:first").attr("id","current"); // Activate the first tab
+            $("#content #tab1").fadeIn(); // Show first tab's content
+        
+            $('#tabs a').click(function(e) {
+                e.preventDefault();
+                if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
+                 return;       
+                }
+                else{             
+                  $("#content").find("[id^='tab']").hide(); // Hide all content
+                  $("#tabs li").attr("id",""); //Reset id's
+                  $(this).parent().attr("id","current"); // Activate this
+                  $('#' + $(this).attr('name')).fadeIn(); // Show content for the current tab
+                }
+            });
+        });
+        </script>
+    </body>
+</html>
